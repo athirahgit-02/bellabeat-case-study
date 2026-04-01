@@ -24,3 +24,8 @@ Original: Low as data is obtained from third party survey (Amazon Mechanical Tur
 Comprehensive: Medium due to lack demographic data (age/gender)
 Current: Low. Data is from 2016 and may be unrelevant for present times
 Cited: High as data is well-documented in Kaggle and is publicly available (public domain CC0)
+
+Data Organization
+The data is stored in 18 CSV files. For this analysis, I will be focusing on:
+1. dailySteps_merged
+2. sleepDay_merged
