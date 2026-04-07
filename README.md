@@ -38,3 +38,10 @@ Excel: Initial data upload and schema verification
 
 ### Data cleaning & transformation  
 To prepare the data for further analysis, I performed the following steps:  
+1. Format Standardization: Converted date columns from String to Date for time-based data
+2. Duplicate removal: Identified 3 suplicate entries in `sleepDay` table and removed them
+3. Null removal: Removed 0 entry in `dailySteps` table
+4. Data Merging: Joined `cleaned_step` and `cleaned_sleep` tables on `Id` and `Date` to create dataset for further correlation analysis
+
+### Documentation of Changes
+All SQL scripts used for cleaning process can be found in `/scripts` folder of this repository
