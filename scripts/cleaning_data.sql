@@ -80,6 +80,6 @@ SELECT
     -- Custom Metric: Minutes spent awake in bed (Toss & Turn time)
     (S.TotalTimeInBed - S.TotalMinutesAsleep) AS MinutesAwakeInBed
 FROM `bellabeat_data.v_cleaned_step` AS A
-INNER JOIN `bellabeat_data.v.cleaned_sleep` AS S
+INNER JOIN `bellabeat_data.v_cleaned_sleep` AS S
     ON A.Id = S.Id 
     AND A.ActivityDate = S.SleepDate;
