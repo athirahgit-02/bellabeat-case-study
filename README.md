@@ -48,7 +48,7 @@ To prepare the data for further analysis, I performed the following steps:
 Challenge: Encountered a parsing error when uploading sleepDay_merged.csv due to non-ISO date formatting (MM/DD/YYYY AM/PM)  
 Resolution: Manually defined the schema as STRING during upload to bypass auto-detection errors, followed by PARSE_TIMESTAMP in SQL to standardize the data for analysis.
 
-#### [View the full cleaning logic here](./scripts/cleaning_data.sql) 
+#### View the full cleaning logic here [Data Cleaning](./scripts/cleaning_data.sql) 
 
 ## 4. Analyze phase  
 
