@@ -51,24 +51,18 @@ Resolution: Manually defined the schema as STRING during upload to bypass auto-d
 #### View the full cleaning logic here [Data Cleaning](./scripts/cleaning_data.sql) 
 
 ## 4. Analyze phase  
+ 
+In this phase, I used SQL to create new metrics that would reveal the relationship between physical exertion and restorative sleep.
 
-### Goal  
-To identify trends in Fitbit user behavior and determine the optimal balance between physical activity and restorative sleep  
+#### Query shows:  
+1. Activity Tier: Used a `CASE` statement bucket users into three tiers: Sedentary, Active, and Highly Active.
+   Finding: I found that the users in the Active Tier (5k - 10k steps) achieved the most stable balance of high activity and high sleep efficiency.
 
-#### Insight 1  
-Hypothesis: Does reaching "Highly Active" tier (10k+ steps) lead to better sleep quality?  
-Finding: Users in the highest activity tier recorded the highest Minutes Awake and a noticeable drop in Sleep Efficiency %  
-Explaination: Extreme physical output without proper "wind-down" periods appears to cause feeling restlessness  
+2. Weekly trend: I implemented a custom DayNumSort using a `CASE` statement to force a Monday-start (Mon=1, Sun=7).
+   Finding: This revealed that while Sunday has the highest TotalTimeInBed, it consistently shows the lowest SleepEfficiency. This suggests that users are attempting to "repay" sleep debt, but with low-quality results.
 
-#### Insight 2  
-Hypothesis: How does behavior shift across a standard 7-day week?  
-Finding: Saturday is the peak day for activity (highest step count), while Sunday consistently shows the highest duration of sleep  
-Explaination: The body compensates for Saturday's high-intensity output with a restorative "Sunday Reset  
-
-#### Insight 3  
-Hypothesis: Is there a perfect balance for activity that allows for maximum sleep quality?  
-Finding: 'Optimal Range' for activity lies between 5000 and 8000 steps  
-Explaination: Within this range, users achieved their highest sleep efficiency scores. Beyond this threshold, efficiency drops as wakefulness begins to increase  
+3. Sleep Efficiency: I used the `SAFE_DIVIDE` function to calculate sleep efficiency which is the ratio of actual restorative sleep to the total time committed to being in bed.
+   Finding: Users that are in Active Tier (5k - 10k steps) enjoys more quality and efficient sleep.
 
 #### View full analysis here [Data Analysis](./scripts/analysis_data.sql)  
 
