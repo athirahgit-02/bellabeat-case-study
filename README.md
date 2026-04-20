@@ -93,3 +93,27 @@ Message: More sleep volume $\neq$ Higher sleep quality. This identifies a busine
 3. Optimum Range: 
 Data: A cluster analysis shows peak sleep performance between 7.5k and 10.5k steps.
 Message: Generic "10,000 Step" goal may be counterproductive for sleep-focused users. We should pivot toward personalized performance ranges.
+
+## 6. Act phase  
+
+Based on the analysis of user behavior trends, I have developed the following data-driven recommendations for the Bellabeat marketing and product teams:  
+
+1. Shift the Narrative: From "Volume" to "Quality"
+The Problem: Users are focused on hitting 10,000 steps, often at the expense of their sleep quality (especially on high-exertion days).
+
+The Act: Update the Bellabeat app to emphasize a "Wellness Sweet Spot." Instead of a hard 10k goal, implement a dynamic target range (e.g., 7.5k–10.5k steps) that promotes the highest sleep efficiency.
+
+2. Solve the "Sunday Paradox"
+The Problem: Data reveals that Sunday "catch-up" sleep is low-quality and high-restlessness.
+
+The Act: Launch a "Sunday Wind-Down" feature. The app should send personalized notifications on Sunday evenings encouraging a consistent bedtime and a 30-minute digital detox, rather than allowing users to rely on sleeping in late Monday morning.
+
+3. Targeted Recovery for "Highly Active" Users
+The Problem: Users in the 'Highly Active' tier (12k+ steps) show significantly higher wakefulness during the night.
+
+The Act: Implement an Automatic Recovery Trigger. When the app detects a 20% spike over a user’s average daily activity, it should suggest "Active Recovery" content, such as guided stretching or magnesium-focused nutrition tips, to reduce physiological stress before bed.
+
+4. Marketing Re-Positioning
+The Problem: There is a clear gap in user knowledge regarding how sedentary days impact sleep latency.
+
+The Act: Create a content marketing campaign titled "The Movement-Sleep Connection." Use the dashboard insights to show potential customers how Bellabeat products don't just track steps—they help you "Unlock Better Rest."
