@@ -69,24 +69,22 @@ Finding: Users that are in Active Tier (5k - 10k steps) enjoys more quality and 
 ## 5. Share phase  
 
 In the final phase of this project, I translated technical findings into an interactive business dashboard. The goal was to provide Bellabeat executives with a diagnostic tool to understand user behavior and drive marketing strategy.  
-
-### Interactive Dashboard  
-The final dashboard was designed with a "Narrative Sidebar" to provide context alongside the visual evidence. It includes dynamic filters for User ID and Date Ranges, allowing for both macro-trends and individual-persona deep dives.  
+  
 #### [Link to Live Dashboard]  
 
-### Key Data Insight  
-During the sharing phase, I focused on three primary "Stories" discovered in the data:  
-1. The High-Exertion Friction:
-Data: 'Highly Active' users ( >12k steps) see a 15% spike in nighttime wakefulness.
-Message: Our most active customers are at the highest risk for poor sleep, creating a niche for recovery-focused premium content
+### Key Data Insight:  
+  
+1. The Activity Tier
+Chart: Bar chart of MinutesAwakeinBed based on ActivityTier (Sedentary, Active and Highly Active)
+Insight: The Highly Active tier (>10k steps) shows a spike in restlessness (Minutes Awake). This indicates that extreme physical exertion might causes stress that interferes with staying asleep.
 
-2. Sunday Reset:
-Data: Sunday has the highest 'Time in Bed' but the lowest 'Sleep Efficiency
-Message: More sleep volume $\neq$ Higher sleep quality. This identifies a business opportunity to market "Weekend Consistency" features.
+2. Weekly Trend
+Chart: A dual-axis line chart comparing StepTotal against SleepEfficiency across the week
+Insight: Though Saturday shows the highest StepTotal, users spend more TotalTimeInBed with higher Minutes Awake (restlessness) on Sunday to recover, leading to the lowest SleepEfficiency of the week.
 
-3. Optimum Range: 
-Data: A cluster analysis shows peak sleep performance between 7.5k and 10.5k steps.
-Message: Generic "10,000 Step" goal may be counterproductive for sleep-focused users. We should pivot toward personalized performance ranges.
+3. Optimal Range
+Chart: A scatter plot showing StepTotal against SleepEfficiency.
+Insight: An Optimal Range between 5000 steps and 10,000 steps (Active Tier) can be identified. While users in this range maintain sleep efficiency, users that took more than 10,000 steps shows diminishing returns. 
 
 ## 6. Act phase  
 
