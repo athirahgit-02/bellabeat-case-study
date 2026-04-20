@@ -70,4 +70,26 @@ Hypothesis: Is there a perfect balance for activity that allows for maximum slee
 Finding: 'Optimal Range' for activity lies between 5000 and 8000 steps  
 Explaination: Within this range, users achieved their highest sleep efficiency scores. Beyond this threshold, efficiency drops as wakefulness begins to increase  
 
-#### View full analysis here [Data Analysis](./scripts/analysis_data.sql)
+#### View full analysis here [Data Analysis](./scripts/analysis_data.sql)  
+
+## Share phase  
+
+### In the final phase of this project, I translated technical findings into an interactive business dashboard. The goal was to provide Bellabeat executives with a diagnostic tool to understand user behavior and drive marketing strategy.  
+
+### Interactive Dashboard  
+The final dashboard was designed with a "Narrative Sidebar" to provide context alongside the visual evidence. It includes dynamic filters for User ID and Date Ranges, allowing for both macro-trends and individual-persona deep dives.  
+#### [Link to Live Dashboard]  
+
+### Key Data Insight  
+During the sharing phase, I focused on three primary "Stories" discovered in the data:  
+1. The High-Exertion Friction:
+Data: 'Highly Active' users ( >12k steps) see a 15% spike in nighttime wakefulness.
+Message: Our most active customers are at the highest risk for poor sleep, creating a niche for recovery-focused premium content
+
+2. Sunday Reset:
+Data: Sunday has the highest 'Time in Bed' but the lowest 'Sleep Efficiency
+Message: More sleep volume $\neq$ Higher sleep quality. This identifies a business opportunity to market "Weekend Consistency" features.
+
+3. Optimum Range: 
+Data: A cluster analysis shows peak sleep performance between 7.5k and 10.5k steps.
+Message: Generic "10,000 Step" goal may be counterproductive for sleep-focused users. We should pivot toward personalized performance ranges.
