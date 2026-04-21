@@ -84,7 +84,7 @@ Insight: Though Saturday shows the highest StepTotal, users spend more TotalTime
 Chart: A scatter plot showing StepTotal against SleepEfficiency.
 Insight: An Optimal Range between 5000 steps and 10,000 steps (Active Tier) can be identified. While users in this range maintain sleep efficiency, users that took more than 10,000 steps shows diminishing returns. 
 
-#### [Link to Live Dashboard]  
+#### View the interactive dashboard here [Data Studio Report](https://datastudio.google.com/reporting/7293fea3-546d-42a9-98e6-ead61a90cf50)  
 
 ## 6. Act phase  
 
