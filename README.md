@@ -1,5 +1,5 @@
 # Bellabeat Case Study
-Data analysis case study on FitBit fitness tracker data using SQL and Looker Studio
+Data analysis case study on FitBit fitness tracker data using SQL and Google Data Studio
 
 ## 1. Ask phase
 
