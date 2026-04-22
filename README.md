@@ -12,18 +12,18 @@ Sando Mur: Co-founder & Executive Team Member
 Marketing Analytics Team: Primary user of data to get marketing insight
 
 ### SMART Question
-What is the average daily step count and how does this physical exertion impacts sleep quality for fitness tracker user within 31 day period and how Bellabeat can use this data to promote better lifestyle habit through Bellabeat app?
+What is the average daily step count, and how does this physical exertion impact sleep quality for fitness tracker users within a 31-day period, and how can Bellabeat use this data to promote better lifestyle habits through the Bellabeat app?
 
 ## 2. Prepare phase
 
 ### Data source  
-'Fitbit Fitness Tracker Data' are used, which was available on Kaggle by Mobius. This dataset contain personal fitness tracker data from thirty fitbit users.
+'Fitbit Fitness Tracker Data' is used, which was available on Kaggle by Mobius. This dataset contains personal fitness tracker data from 31 FitBit users.
 
 ### ROCCC Analysis  
-Reliable: Low due to small sample size (30 users)  
-Original: Low as data is obtained from third party survey (Amazon Mechanical Turk)  
-Comprehensive: Medium due to lack demographic data (age/gender)  
-Current: Low. Data is from 2016 and may be unrelevant for present times  
+Reliable: Low due to small sample size (31 users)  
+Original: Low as data is obtained from a third-party survey (Amazon Mechanical Turk)  
+Comprehensive: Medium due to lack of demographic data (age/gender)  
+Current: Low. Data is from 2016 and may be irrelevant for the present times  
 Cited: High as data is well-documented in Kaggle and is publicly available (public domain CC0)
 
 ### Data Organization  
@@ -35,21 +35,21 @@ The data is stored in 18 CSV files. For this analysis, I will be focusing on:
 
 ### Tools  
 Excel: Initial data upload and schema verification  
-SQL (BigQuery): Data cleaning, transformation and merging  
+SQL (BigQuery): Data cleaning, transformation, and merging  
 Google Data Studio: Data visualisation
 
 ### Data cleaning & transformation  
 To prepare the data for further analysis, I performed the following steps:  
 1. Format Standardization: Converted date columns from String to Date for time-based data
-2. Duplicate removal: Identified 3 duplicate entries in `sleepDay` table and removed them
-3. Null removal: Removed 0 entry in `dailySteps` table
-4. Data Merging: Joined `cleaned_step` and `cleaned_sleep` tables on `Id` and `Date` to create dataset for further correlation analysis
+2. Duplicate removal: Identified 3 duplicate entries in the `sleepDay` table and removed them
+3. Null removal: Removed 0 entries in the `dailySteps` table
+4. Data Merging: Joined `cleaned_step` and `cleaned_sleep` tables on `Id` and `Date` to create a dataset for further correlation analysis
 
 ### Troubleshooting  
 Challenge: Encountered a parsing error when uploading sleepDay_merged.csv due to non-ISO date formatting (MM/DD/YYYY AM/PM)  
 Resolution: Manually defined the schema as STRING during upload to bypass auto-detection errors, followed by PARSE_TIMESTAMP in SQL to standardize the data for analysis.
 
-### View the full cleaning logic here [Data Cleaning](./scripts/cleaning_data.sql) 
+### View the full cleaning logic here: [Data Cleaning](./scripts/cleaning_data.sql) 
 
 ## 4. Analyze phase  
  
@@ -62,10 +62,10 @@ Finding: I found that the users in the Active Tier (5k - 10k steps) achieved the
 2. Weekly trend: I implemented a custom DayNumSort using a `CASE` statement to force a Monday-start (Mon=1, Sun=7).
 Finding: This revealed that while Sunday has the highest TotalTimeInBed, it consistently shows the lowest SleepEfficiency. This suggests that users are attempting to "repay" sleep debt, but with low-quality results.
 
-3. Sleep Efficiency: I used the `SAFE_DIVIDE` function to calculate sleep efficiency which is the ratio of actual restorative sleep to the total time committed to being in bed.
-Finding: Users that are in Active Tier (5k - 10k steps) enjoys more quality and efficient sleep.
+3. Sleep Efficiency: I used the `SAFE_DIVIDE` function to calculate sleep efficiency, defined as the ratio of actual restorative sleep to the total time spent in bed.
+Finding: Users who are in the Active Tier (5k - 10k steps) enjoy higher-quality, more efficient sleep.
 
-### View full analysis here [Data Analysis](./scripts/analysis_data.sql)  
+### View full analysis here: [Data Analysis](./scripts/analysis_data.sql)  
 
 ## 5. Share phase  
 
@@ -75,7 +75,7 @@ In the final phase of this project, I translated technical findings into an inte
   
 1. [The Activity Tier](./visuals/activity_tier.png) 
 Chart: Bar chart of MinutesAwakeinBed based on ActivityTier (Sedentary, Active and Highly Active)
-Insight: The Highly Active tier (>10k steps) shows a spike in restlessness (Minutes Awake). This indicates that extreme physical exertion might causes stress that interferes with staying asleep.
+Insight: The Highly Active tier (>10k steps) shows a spike in restlessness (Minutes Awake). This indicates that extreme physical exertion might cause stress that interferes with staying asleep.
 
 2. [Weekly Trend](./visuals/weekly_trend.png)
 Chart: A dual-axis line chart comparing StepTotal against SleepEfficiency across the week
@@ -83,9 +83,9 @@ Insight: Though Saturday shows the highest StepTotal, users spend more TotalTime
 
 3. [Optimum Range](./visuals/optimum_range.png)
 Chart: A scatter plot showing StepTotal against SleepEfficiency.
-Insight: An Optimal Range between 5000 steps and 10,000 steps (Active Tier) can be identified. While users in this range maintain sleep efficiency, users that took more than 10,000 steps shows diminishing returns.
+Insight: An Optimal Range between 5000 steps and 10,000 steps (Active Tier) can be identified. While users in this range maintain sleep efficiency, users who took more than 10,000 steps show diminishing returns.
 
-### View the interactive dashboard here [![Bellabeat Dashboard](./visuals/bellabeat_dashboard.png)](https://datastudio.google.com/reporting/7293fea3-546d-42a9-98e6-ead61a90cf50)  
+### View the interactive dashboard here: [![Bellabeat Dashboard](./visuals/bellabeat_dashboard.png)](https://datastudio.google.com/reporting/7293fea3-546d-42a9-98e6-ead61a90cf50)  
 
 *Click the dashboard image above to explore the interactive version in Data Studio.*
 
@@ -94,8 +94,8 @@ Insight: An Optimal Range between 5000 steps and 10,000 steps (Active Tier) can 
 Based on the analysis of user behavior trends, I have developed the following data-driven recommendations for the Bellabeat marketing and product teams:  
 
 1. Targeted Recovery for "Highly Active" Users
-   Problem: Users in the 'Highly Active' tier show significantly higher wakefulness during the night, indicating that over-exertion leads to intrupted sleep.
-   Action: Implement an app notification that triggered when a user exceeds their 7-day step average by 25% and suggesting cool-down routine to help protect sleep efficiency.
+   Problem: Users in the 'Highly Active' tier show significantly higher wakefulness during the night, indicating that over-exertion leads to interrupted sleep.
+   Action: Implement an app notification that triggers when a user exceeds their 7-day step average by 25% and suggests a cool-down routine to help protect sleep efficiency.
 
 3. Introduce 'Restorative Sundays'
    Problem: Data reveals low SleepEfficiency on Sundays following high-activity Saturdays (>10k steps).
@@ -107,7 +107,7 @@ Based on the analysis of user behavior trends, I have developed the following da
 
 ------
 ### 📧 Let's Connect!
-I am a **Aspiring Data Analyst** with a background in **R&D Engineering**, specializing in turning complex technical measurements into actionable business insights.
+I am an **Aspiring Data Analyst** with a background in **R&D Engineering**, specializing in turning complex technical measurements into actionable business insights.
 
 * **LinkedIn:** [linkedin.com/in/athirah-asri](https://www.linkedin.com/in/athirah-asri/)
 * **Email:** athirahasri02@gmail.com
