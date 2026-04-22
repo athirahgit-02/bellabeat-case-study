@@ -1,10 +1,10 @@
 # Bellabeat Case Study
-Data analysis case study on FitBit fitness tracker data using SQL and Google Data Studio
+Data analysis case study on FitBit fitness tracker data using SQL and Google Data Studio.
 
 ## 1. Ask phase
 
 ### Business Task
-To gain insight into how users are using fitness smart devices to help guide Bellabeat's marketing strategy
+To gain insight into how users are using fitness smart devices to help guide Bellabeat's marketing strategy.
 
 ### Stakeholder
 Urška Sršen: Co-founder & Chief Creative Officer  
@@ -109,6 +109,6 @@ Based on the analysis of user behavior trends, I have developed the following da
 ### 📧 Let's Connect!
 I am a **Aspiring Data Analyst** with a background in **R&D Engineering**, specializing in turning complex technical measurements into actionable business insights.
 
-* **LinkedIn:** [linkedin.com/in/athirah-asri](LINK_HERE)
+* **LinkedIn:** [linkedin.com/in/athirah-asri](linkedin.com/in/athirah-asri)
 * **Email:** athirahasri02@gmail.com
-* **Portfolio Home:** [Link to your main GitHub Profile](LINK_HERE)
+* **Portfolio Home:** [github.com/athirahgit-02](github.com/athirahgit-02)
