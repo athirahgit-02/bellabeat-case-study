@@ -109,6 +109,6 @@ Based on the analysis of user behavior trends, I have developed the following da
 ### 📧 Let's Connect!
 I am a **Aspiring Data Analyst** with a background in **R&D Engineering**, specializing in turning complex technical measurements into actionable business insights.
 
-* **LinkedIn:** [linkedin.com/in/athirah-asri]
+* **LinkedIn:** [linkedin.com/in/athirah-asri](https://www.linkedin.com/in/athirah-asri/)
 * **Email:** athirahasri02@gmail.com
-* **Portfolio Home:** [github.com/athirahgit-02]
+* **Portfolio Home:** [github.com/athirahgit-02](https://github.com/athirahgit-02)
