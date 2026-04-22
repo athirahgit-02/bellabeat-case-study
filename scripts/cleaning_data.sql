@@ -1,5 +1,5 @@
 /* 
-Project: Bellabeat Fitness Data Analysis  
+Project: Bellabeat Case Study  
 Process: Data cleaning, Type Conversion & Table Joining  
 Author: Athirah Asri  
 Date: April 2026  
