@@ -73,15 +73,15 @@ In the final phase of this project, I translated technical findings into an inte
 
 ### Key Data Insight:  
   
-1. The Activity Tier
+1. [The Activity Tier](./visuals/activity_tier.png) 
 Chart: Bar chart of MinutesAwakeinBed based on ActivityTier (Sedentary, Active and Highly Active)
 Insight: The Highly Active tier (>10k steps) shows a spike in restlessness (Minutes Awake). This indicates that extreme physical exertion might causes stress that interferes with staying asleep.
 
-2. Weekly Trend
+2. [Weekly Trend](./visuals/weekly_trend.png)
 Chart: A dual-axis line chart comparing StepTotal against SleepEfficiency across the week
 Insight: Though Saturday shows the highest StepTotal, users spend more TotalTimeInBed with higher Minutes Awake (restlessness) on Sunday to recover, leading to the lowest SleepEfficiency of the week.
 
-3. Optimal Range
+3. [Optimum Range](.visuals/optimum_range.png)
 Chart: A scatter plot showing StepTotal against SleepEfficiency.
 Insight: An Optimal Range between 5000 steps and 10,000 steps (Active Tier) can be identified. While users in this range maintain sleep efficiency, users that took more than 10,000 steps shows diminishing returns. 
 
