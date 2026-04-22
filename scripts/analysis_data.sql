@@ -6,6 +6,7 @@ PURPOSE: Identifying correlations between physical activity, sleep efficiency, a
 CREATE VIEW `bellabeat_data.v_bellabeat_master_analysis` AS
 SELECT 
     Id,
+    ActivityDate,
     StepTotal,
     TotalMinutesAsleep,
     TotalTimeInBed,
