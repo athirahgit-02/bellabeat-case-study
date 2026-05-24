@@ -1,4 +1,4 @@
-# Consumer Behavioral Analysis (Bellabeat/FitBit Dataset)
+# User Behavioral Analysis (Bellabeat/FitBit Dataset)
 Data analysis on FitBit fitness tracker data using SQL (BigQuery) and Google Data Studio.
 
 ### By Nurul Athirah
